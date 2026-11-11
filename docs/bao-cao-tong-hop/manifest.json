@@ -1,0 +1,92 @@
+{
+  "generated_on": "2026-11-12",
+  "report": "docs/bao-cao-tong-hop/Bao_Cao_Tong_Hop_CICD_Security.docx",
+  "inputs": [
+    {
+      "path": "docs/ke-hoach/KeHoach_CICD_Security.docx",
+      "sha256": "d96c2a828531b54c3e602e42281e85dca9e070dc05efeecfc4ca6d4539fa66b8"
+    },
+    {
+      "path": "docs/bao-cao-thanh-vien/BaoCao_3_4_CICD_Runner.docx",
+      "sha256": "92c4fce734c401ffefd29c57b365ad82bf45eed2ffa9e9731762a7d62ee05387"
+    },
+    {
+      "path": "docs/bao-cao-thanh-vien/Bao_cao_tong_ket_muc_3_5_Dependency_Confusion.docx",
+      "sha256": "b4b6008f48bd7e8855e3d5e806244b6ea1c7be4e031cd0c9faf7ddb3e0a8c5f4"
+    },
+    {
+      "path": "docs/bao-cao-thanh-vien/Bao_Cao_3_3_GitLab_SSRF_Le_Quang_Hien.docx",
+      "sha256": "a527fc65d75aed5d303777b5ccb25a3e47d331e0f1e0748bea52ea8f3f34f86c"
+    },
+    {
+      "path": "docs/bao-cao-thanh-vien/Bao_cao_muc_3_1_Jenkins_Script_Console_Do_Thao_Duong .docx",
+      "sha256": "17d1ff90acc1d9bc98cbe6fe297770d9c5d5e9b5071df175f7f9e00115ef9d80"
+    },
+    {
+      "path": "evidence/3.2-jenkins-cli-fileread/before_patch.txt",
+      "sha256": "8492381b1c29107c6e59b818b0831e5adeb2346c2c11574fd98ba409ff2063b7"
+    },
+    {
+      "path": "evidence/3.2-jenkins-cli-fileread/after_patch_comparison.txt",
+      "sha256": "44d7ac4f9bb21a5b6a6842da97b0b2e2be1ba7b0a210ef293e438f9c2e3fc81f"
+    },
+    {
+      "path": "evidence/3.2-jenkins-cli-fileread/after_patch.txt",
+      "sha256": "3d1faca51aee78437c3d706b68f7bf6870bb0547198d21bc800685335a34f44c"
+    },
+    {
+      "path": "evidence/3.2-jenkins-cli-fileread/before_patch_comparison.txt",
+      "sha256": "7fe57e275453f7779501c8b6d8eb413a090eeb6cef87256d1e3c0fe0b25e046b"
+    },
+    {
+      "path": "labs/3.1-jenkins-script-console/evidence/03a-fix-applied.txt",
+      "sha256": "88139e74c8514aa3f04a8dc7ae25f234bc81405624c83af7f160a3a3fe367943"
+    },
+    {
+      "path": "labs/3.1-jenkins-script-console/evidence/04-after-fix-summary.txt",
+      "sha256": "3e8cba342b6f50c80953c891f166a5233c9264898643af53ce3b7be8e89a54e9"
+    },
+    {
+      "path": "labs/3.1-jenkins-script-console/evidence/02-groovy-exec-anon-output.txt",
+      "sha256": "ec413be21042b3dc0ce7244f81a22dee320670132c7abdf325bf0aa46dc28610"
+    },
+    {
+      "path": "labs/3.3-gitlab-ssrf/evidence/03-ssrf-poc-internal-target-access-log.txt",
+      "sha256": "567407b728268b0b7ae1823544a357a1c30d588463051e1735f34fef6e80128f"
+    },
+    {
+      "path": "labs/3.3-gitlab-ssrf/evidence/02-before-baseline-internal-target-log.txt",
+      "sha256": "f28591f1985ae101815ff50ce7f203d512dc1c7514d06fb0db1e85252e6acce1"
+    },
+    {
+      "path": "labs/3.3-gitlab-ssrf/evidence/01-version-and-webhook-config.txt",
+      "sha256": "a0e8de734ca164d14f000f10bf826107694417a6178ccb53746f1ee16f31392f"
+    },
+    {
+      "path": "labs/3.3-gitlab-ssrf/evidence/04-mitigation-network-segmentation.txt",
+      "sha256": "352a89ce6da12dde3b5d30801457ce60a42aaad0909641da81ba6383450b552c"
+    },
+    {
+      "path": "labs/3.4-cicd-runner-secret/evidence/02-project-b-variable-unprotected.txt",
+      "sha256": "42c3d517f945afcc8357dc3a0cc7147ae4618c760a05615679f40e1f06813e13"
+    },
+    {
+      "path": "labs/3.4-cicd-runner-secret/evidence/03-cross-project-trace-leak-shell-executor.txt",
+      "sha256": "17f19fbcfc74d1d4625903389aad4fac434db98e08c34473df816bd97863ba54"
+    },
+    {
+      "path": "labs/3.4-cicd-runner-secret/evidence/01-runner-shell-shared-config.txt",
+      "sha256": "9769cb77598154cc18b291dc65cb4c8e935656c2954ec033d7ecce19df997bab"
+    },
+    {
+      "path": "labs/3.4-cicd-runner-secret/evidence/05-after-docker-executor-isolation.txt",
+      "sha256": "756904619e2e4285707918dd9537d6c90893bcb7813d455d019ab390d82ca27a"
+    },
+    {
+      "path": "labs/3.4-cicd-runner-secret/evidence/04-unprotected-variable-on-unprotected-branch.txt",
+      "sha256": "6951bb5713e1ab6b4577d5d220678480154636541bf18fb220ec1e690b665a44"
+    }
+  ],
+  "figures": 40,
+  "tables": 27
+}

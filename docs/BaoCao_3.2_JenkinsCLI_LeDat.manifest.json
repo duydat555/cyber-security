@@ -1,0 +1,24 @@
+{
+  "generated_on": "2026-11-12",
+  "report": "docs/BaoCao_3.2_JenkinsCLI_LeDat.docx",
+  "inputs": [
+    {
+      "path": "evidence/3.2-jenkins-cli-fileread/before_patch.txt",
+      "sha256": "8492381b1c29107c6e59b818b0831e5adeb2346c2c11574fd98ba409ff2063b7"
+    },
+    {
+      "path": "evidence/3.2-jenkins-cli-fileread/after_patch.txt",
+      "sha256": "3d1faca51aee78437c3d706b68f7bf6870bb0547198d21bc800685335a34f44c"
+    },
+    {
+      "path": "evidence/3.2-jenkins-cli-fileread/before_patch_comparison.txt",
+      "sha256": "7fe57e275453f7779501c8b6d8eb413a090eeb6cef87256d1e3c0fe0b25e046b"
+    },
+    {
+      "path": "evidence/3.2-jenkins-cli-fileread/after_patch_comparison.txt",
+      "sha256": "44d7ac4f9bb21a5b6a6842da97b0b2e2be1ba7b0a210ef293e438f9c2e3fc81f"
+    }
+  ],
+  "figures": 2,
+  "tables": 4
+}

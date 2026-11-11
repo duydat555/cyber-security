@@ -1,0 +1,17 @@
+{
+  "CHƯƠNG 1 TỔNG QUAN ĐỀ TÀI": 5,
+  "CHƯƠNG 2 CƠ SỞ LÝ THUYẾT VÀ PHƯƠNG PHÁP": 8,
+  "CHƯƠNG 3 PHÂN TÍCH VÀ THỰC NGHIỆM": 11,
+  "3.1 Jenkins Script Console và phân quyền quản trị": 11,
+  "3.2 Jenkins CLI và đọc file qua tham số": 16,
+  "3.3 GitLab SSRF qua webhook": 21,
+  "3.4 CI CD Runner và bảo vệ secret": 26,
+  "3.5 Dependency Confusion trong chuỗi cung ứng": 32,
+  "CHƯƠNG 4 GIẢI PHÁP PHÒNG CHỐNG TỔNG THỂ": 38,
+  "KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN": 43,
+  "PHÂN CÔNG VÀ KHỐI LƯỢNG CÔNG VIỆC": 44,
+  "TÀI LIỆU THAM KHẢO": 45,
+  "PHỤ LỤC A CHỈ MỤC BẰNG CHỨNG": 46,
+  "PHỤ LỤC B QUY TRÌNH TÁI KIỂM THỬ AN TOÀN": 47,
+  "PHỤ LỤC C DANH MỤC HÌNH VÀ BẢNG": 48
+}
