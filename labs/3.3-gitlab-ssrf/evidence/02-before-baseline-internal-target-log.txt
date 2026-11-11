@@ -1,0 +1,2 @@
+[BASELINE] docker logs lab33-internal-target (truoc khi trigger webhook)
+--- Khong co dong access-log nao (chi co log khoi dong nginx worker) ---

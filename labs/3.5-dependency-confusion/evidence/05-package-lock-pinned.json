@@ -1,0 +1,22 @@
+{
+  "name": "demo-consumer-project",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "demo-consumer-project",
+      "version": "1.0.0",
+      "dependencies": {
+        "ten-noi-bo-demo-pkg": "*"
+      }
+    },
+    "node_modules/ten-noi-bo-demo-pkg": {
+      "version": "1.0.0",
+      "resolved": "http://127.0.0.1:4873/ten-noi-bo-demo-pkg/-/ten-noi-bo-demo-pkg-1.0.0.tgz",
+      "integrity": "sha512-l+txp/gMgRFHjc/OaEc1lQDpl6S+d2eJ/jbvNhpWAId1ZTKmUnOr6SbLMmSjVuhm6z2Zo4RMavx92cxGMwHg+A==",
+      "hasInstallScript": true,
+      "license": "MIT"
+    }
+  }
+}

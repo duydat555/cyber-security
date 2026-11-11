@@ -1,0 +1,19 @@
+name: cicd-lab35
+services:
+  registry-internal:
+    image: verdaccio/verdaccio:5
+    container_name: lab35-registry-internal
+    ports: ["127.0.0.1:4873:4873"]
+    volumes:
+      - ./scripts/internal-config/config.yaml:/verdaccio/conf/config.yaml:ro
+      - internal_storage:/verdaccio/storage
+  registry-public:
+    image: verdaccio/verdaccio:5
+    container_name: lab35-registry-public
+    ports: ["127.0.0.1:4874:4873"]
+    volumes:
+      - ./scripts/public-config/config.yaml:/verdaccio/conf/config.yaml:ro
+      - public_storage:/verdaccio/storage
+volumes:
+  internal_storage:
+  public_storage:

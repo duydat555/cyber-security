@@ -1,0 +1,16 @@
+[Job B - project-b, id=3, executor=shell] (pipeline 4, job 3)
+$ echo $DEPLOY_SECRET > /tmp/lab34-job-trace-project-b
+$ ls -la /tmp/lab34-job-trace-project-b
+-rw-rw-r-- 1 gitlab-runner gitlab-runner 31 Nov 11 17:23 /tmp/lab34-job-trace-project-b
+
+[Job A - project-a, id=2, executor=shell, CHAY TREN CUNG RUNNER] (pipeline 5, job 4)
+$ ls -la /tmp/lab34-job-trace-* 2>/dev/null || echo "khong tim thay file trace nao"
+-rw-rw-r-- 1 gitlab-runner gitlab-runner 31 Nov 11 17:23 /tmp/lab34-job-trace-project-b
+$ cat /tmp/lab34-job-trace-* 2>/dev/null || echo "khong doc duoc"
+LAB34-FAKE-SECRET-VALUE-0xBEEF              <-- RO RI: job cua project A doc duoc secret cua project B
+$ env | grep -i DEPLOY || echo "DEPLOY_SECRET khong co trong env cua job nay (nhu mong doi)"
+DEPLOY_SECRET khong co trong env cua job nay (nhu mong doi)   <-- bien moi truong VAN duoc GitLab scope dung theo project
+
+=> Ket luan: shell executor dung chung filesystem /tmp giua cac job cua CAC PROJECT KHAC NHAU
+   tren cung mot runner. Day la nguyen nhan ro ri CHEO PROJECT, du GitLab van scope bien CI/CD
+   dung theo project qua bien moi truong.

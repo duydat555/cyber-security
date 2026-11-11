@@ -1,0 +1,2 @@
+# DA VA: chi dung registry NOI BO, khong con fallback sang "public"
+registry=http://127.0.0.1:4873/

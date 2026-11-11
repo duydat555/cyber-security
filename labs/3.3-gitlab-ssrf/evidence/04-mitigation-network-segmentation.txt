@@ -1,0 +1,18 @@
+[KIEM TRA] GitLab 10.5.5 KHONG co tuy chon "Outbound requests allow/deny list" trong
+Admin Area > Settings (tinh nang nay chi duoc GitLab bo sung o cac ban sau). Day la gap
+da duoc ghi nhan rieng, khong phai loi thao tac.
+
+[BIEN PHAP GIAM THIEU DA KIEM THU TRONG LAB] Network segmentation o tang Docker:
+  $ docker network disconnect cicd-lab33_default lab33-internal-target
+
+[KIEM CHUNG LAI] GET /root/ssrf-demo-project/hooks/1/test?trigger=push_events (lan 2)
+GitLab production.log:
+  WebHook Error => Failed to open TCP connection to internal-target:80
+                   (getaddrinfo: Name or service not known)
+
+docker logs lab33-internal-target (sau khi mitigation) -> KHONG co dong access-log moi nao.
+
+=> Sau khi cach ly mang, GitLab khong con ket noi duoc toi dich noi bo truoc do.
+=> Day la bien phap giam nhe o TANG MANG (network segmentation / egress filtering),
+   KHONG PHAI ban va chinh thuc cua GitLab cho dung CVE da dinh danh - can ghi ro trong
+   bao cao de khong nham lan voi viec GitLab da tu vlong sua loi nay trong ung dung.

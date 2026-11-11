@@ -1,0 +1,7 @@
+
+> ten-noi-bo-demo-pkg@1.0.0 postinstall
+> node -e "console.log('[INTERNAL-PACKAGE] install ten-noi-bo-demo-pkg@1.0.0 tu registry noi bo - AN TOAN')"
+
+[INTERNAL-PACKAGE] install ten-noi-bo-demo-pkg@1.0.0 tu registry noi bo - AN TOAN
+
+added 1 package in 101ms

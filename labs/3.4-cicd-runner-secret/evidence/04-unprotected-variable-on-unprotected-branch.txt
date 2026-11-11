@@ -1,0 +1,13 @@
+[TRUOC VA] Variable DEPLOY_SECRET: protected=false
+Nhanh thu nghiem: feature-x (KHONG duoc danh dau Protected Branch)
+Pipeline 7, job 6 (project-b):
+$ if [ -z "$DEPLOY_SECRET" ]; then echo KHONG duoc cap; else echo DA duoc cap...; fi
+DEPLOY_SECRET DA duoc cap, gia tri dai 30 ky tu    <-- MISCONFIG: nhanh khong bao ve van nhan duoc secret
+
+[SAU VA] Dat protected=true cho DEPLOY_SECRET qua API:
+  PUT /api/v4/projects/3/variables/DEPLOY_SECRET  {protected: true}
+
+Chay lai CHINH XAC cung pipeline tren CHINH nhanh feature-x (khong doi gi khac):
+Pipeline 8, job 7 (project-b):
+$ if [ -z "$DEPLOY_SECRET" ]; then echo KHONG duoc cap; else echo DA duoc cap...; fi
+DEPLOY_SECRET KHONG duoc cap (trong)              <-- DA VA: nhanh khong bao ve khong con nhan secret

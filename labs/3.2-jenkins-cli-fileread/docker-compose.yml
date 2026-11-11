@@ -1,0 +1,18 @@
+name: cicd-lab32
+services:
+  jenkins:
+    image: jenkins/jenkins:2.441-jdk17
+    hostname: lab32-controller
+    ports: ["127.0.0.1:8080:8080"]
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - ./scripts/init.groovy:/usr/share/jenkins/ref/init.groovy.d/lab.groovy:ro
+    environment:
+      JAVA_OPTS: -Djenkins.install.runSetupWizard=false
+      LAB_ADMIN_PASSWORD: ${LAB_ADMIN_PASSWORD:?Set LAB_ADMIN_PASSWORD in .env}
+    networks: [lab]
+networks:
+  lab:
+    internal: true
+volumes:
+  jenkins_home:

@@ -1,0 +1,9 @@
+Jenkins Script Console — AFTER FIX verification
+Authorization: FullControlOnceLoggedInAuthorizationStrategy (allowAnonymousRead=false)
+SecurityRealm: HudsonPrivateSecurityRealm
+
+GET /script (anonymous, no session) -> HTTP 403, redirect to /login?from=%2Fscript
+POST /scriptText (anonymous) -> HTTP 403 (no valid crumb / not authenticated)
+GET /api/json (anonymous) -> HTTP 403
+
+Conclusion: anonymous users can no longer reach Script Console or execute Groovy.

@@ -1,0 +1,27 @@
+name: cicd-lab33
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:10.5.5-ce.0
+    container_name: lab33-gitlab
+    hostname: lab33-gitlab.local
+    platform: linux/amd64
+    shm_size: 512m
+    ports: ["127.0.0.1:8929:80"]
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://127.0.0.1'
+        gitlab_rails['gitlab_shell_ssh_port'] = 2222
+        gitlab_rails['initial_root_password'] = 'Lab33RootPass!2026'
+    volumes:
+      - gitlab_config:/etc/gitlab
+      - gitlab_logs:/var/log/gitlab
+      - gitlab_data:/var/opt/gitlab
+  internal-target:
+    image: nginx:alpine
+    container_name: lab33-internal-target
+    volumes:
+      - ./scripts/target-nginx.conf:/etc/nginx/conf.d/default.conf:ro
+volumes:
+  gitlab_config:
+  gitlab_logs:
+  gitlab_data:

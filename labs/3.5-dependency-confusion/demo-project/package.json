@@ -1,0 +1,9 @@
+{
+  "name": "demo-consumer-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Du an demo tieu thu goi ten-noi-bo-demo-pkg - dung de minh hoa dependency confusion.",
+  "dependencies": {
+    "ten-noi-bo-demo-pkg": "*"
+  }
+}

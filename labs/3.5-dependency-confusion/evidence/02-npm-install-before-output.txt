@@ -1,0 +1,7 @@
+
+> ten-noi-bo-demo-pkg@9.9.9 postinstall
+> node -e "console.log('[ATTACKER-SIMULATION] postinstall da chay tu ban 9.9.9 tren registry PUBLIC gia lap - day la PoC vo hai, khong co payload thuc')"
+
+[ATTACKER-SIMULATION] postinstall da chay tu ban 9.9.9 tren registry PUBLIC gia lap - day la PoC vo hai, khong co payload thuc
+
+added 1 package in 119ms

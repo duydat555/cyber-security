@@ -1,0 +1,2 @@
+# CAU HINH SAI (MISCONFIG) — khong gan scope rieng, mac dinh tro ve registry "public"
+registry=http://127.0.0.1:4874/

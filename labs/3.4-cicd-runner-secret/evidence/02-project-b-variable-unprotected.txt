@@ -1,0 +1,4 @@
+Project-b (id=3) CI/CD variable:
+  key       = DEPLOY_SECRET
+  value     = LAB34-FAKE-SECRET-VALUE-0xBEEF  (gia tri gia lap, KHONG phai secret that)
+  protected = false   <-- MISCONFIG: duoc cap cho MOI nhanh/tag, ke ca nhanh khong bao ve

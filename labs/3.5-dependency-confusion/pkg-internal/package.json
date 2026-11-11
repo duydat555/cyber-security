@@ -1,0 +1,10 @@
+{
+  "name": "ten-noi-bo-demo-pkg",
+  "version": "1.0.0",
+  "description": "Gói nội bộ hợp lệ dùng cho lab dependency confusion (vô hại).",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node -e \"console.log('[INTERNAL-PACKAGE] install ten-noi-bo-demo-pkg@1.0.0 tu registry noi bo - AN TOAN')\""
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+GitLab version (API /api/v4/version): 10.5.5 (revision c7e4919)
+Project: root/ssrf-demo-project (id=1)
+Webhook id=1 configuration (GET /api/v4/projects/1/hooks):
+  url          = http://internal-target/ssrf-poc-marker-1794417417
+  push_events  = true
+  (internal-target la hostname CHI ton tai trong mang Docker noi bo cua lab,
+   khong phai dia chi cong khai, khong co trong he thong ben thu ba)

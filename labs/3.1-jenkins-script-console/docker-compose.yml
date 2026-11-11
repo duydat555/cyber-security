@@ -1,0 +1,18 @@
+# Lab 3.1 — Jenkins Script Console mở do cấu hình phân quyền sai (Security Misconfiguration)
+# Môi trường CÔ LẬP: chỉ bind 127.0.0.1. KHÔNG phải lỗ hổng CVE — đây là lỗi cấu hình.
+# Dùng Jenkins LTS (đã vá mọi CVE) để chứng minh rủi ro đến TỪ CẤU HÌNH, không phải phiên bản.
+services:
+  jenkins:
+    image: jenkins/jenkins:lts-jdk17
+    container_name: lab31-jenkins
+    ports:
+      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:50000:50000"
+    volumes:
+      - jenkins_home_31:/var/jenkins_home
+    environment:
+      # Bỏ qua setup wizard -> mô phỏng tình huống admin cài tối thiểu, QUÊN bật phân quyền.
+      # Jenkins khởi tạo với Authorization = "Anyone can do anything" (không an toàn).
+      - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+volumes:
+  jenkins_home_31:

@@ -1,0 +1,20 @@
+# Lab 3.4 — chỉ chạy gitlab-runner, tái dùng GitLab của lab 3.3 (network cicd-lab33_default)
+name: cicd-lab34
+services:
+  runner:
+    image: gitlab/gitlab-runner:latest
+    container_name: lab34-runner
+    volumes:
+      - runner_config:/etc/gitlab-runner
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      default:
+      lab33:
+        aliases: [lab34-runner]
+networks:
+  default: {}
+  lab33:
+    external: true
+    name: cicd-lab33_default
+volumes:
+  runner_config:

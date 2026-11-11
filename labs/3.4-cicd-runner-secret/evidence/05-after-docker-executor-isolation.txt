@@ -1,0 +1,17 @@
+[VA] Dang ky them runner thu hai: executor=docker, image=alpine:latest, tag=lab34-docker,
+network_mode=cicd-lab33_default (de job van clone duoc tu GitLab noi bo).
+
+[Job B-docker - project-b] (pipeline 10, job 9)
+$ echo $DEPLOY_SECRET > /tmp/lab34-job-trace-project-b-docker
+$ ls -la /tmp/lab34-job-trace-project-b-docker
+(ghi thanh cong trong container rieng cua job nay)
+
+[Job A-docker - project-a, CHAY TREN CUNG RUNNER NHUNG EXECUTOR DOCKER] (pipeline 12, job 11)
+$ ls -la /tmp/lab34-job-trace-* 2>/dev/null || echo "khong tim thay file trace nao (moi truong rieng)"
+khong tim thay file trace nao (moi truong rieng)
+$ cat /tmp/lab34-job-trace-* 2>/dev/null || echo "khong doc duoc / khong ton tai"
+khong doc duoc / khong ton tai
+
+=> Ket luan: sau khi chuyen sang Docker executor (moi job 1 container rieng, huy sau khi chay),
+   job cua project A KHONG CON thay duoc dau vet/file cua job project B nua. Loi ro ri cheo
+   project qua filesystem dung chung da duoc khac phuc.
