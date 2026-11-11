@@ -1,0 +1,15 @@
+.venv/
+.env
+.env.*
+!.env.example
+**/runtime/
+**/data/
+**/node_modules/
+**/storage/
+**/__pycache__/
+*.pyc
+*.jar
+.DS_Store
+tools/browser-profile/
+*.pdf
+*.log
