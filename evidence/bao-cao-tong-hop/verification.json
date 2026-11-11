@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-12",
+  "figures": 40,
+  "tables": 27,
+  "docx_sha256": "985f1fa642d3608bacff4628717aaa15b99049717f09d49db4324b886f6cf239",
+  "resolved_gaps": [
+    "GitLab (3.3): bo sung bang chung sau xu ly (network segmentation), xac nhan bang production.log va access log dich",
+    "3.1, 3.4, 3.5: da tai hien doc lap bang Docker that cua Le Dat, khong con chi dua vao anh muon cua thanh vien"
+  ],
+  "known_evidence_gaps": [
+    "GitLab (3.3): bien phap da kiem thu la muc mang (network segmentation), chua phai ban va ung dung chinh thuc; lien he chinh xac voi CVE-2018-8801 van can doi chieu them",
+    "Script Console (3.1): chua co doi chung tai khoan thuong (chi moi kiem tra an danh vs da dang nhap)",
+    "Runner (3.4): chua ra soat rui ro Docker socket va cac tuy chon MR pipeline",
+    "Dependency confusion (3.5): chua thu proxy/uplink hoac he sinh thai package khac ngoai npm"
+  ]
+}

@@ -1,0 +1,34 @@
+Jenkins version:
+X-Jenkins: 2.442
+X-Jenkins-Session: c6e0b976
+Anonymous two-line marker test:
+
+ERROR: You must authenticate to access this Jenkins.
+Jenkins CLI
+Usage: java -jar jenkins-cli.jar [-s URL] command [opts...] args...
+Options:
+ -s URL              : the server URL (defaults to the JENKINS_URL env var)
+ -webSocket          : connect using WebSocket (the default; works well with most reverse proxies; requires Jetty)
+ -http               : use a pair of HTTP(S) connections rather than WebSocket
+ -ssh                : use SSH protocol rather than WebSocket (requires -user; SSH port must be open on server)
+ -i KEY              : SSH private key file used for authentication (for use with -ssh)
+ -noCertificateCheck : bypass HTTPS certificate check entirely. Use with caution
+ -noKeyAuth          : do not try to load the SSH authentication private key. Conflicts with -i
+ -user               : specify user (for use with -ssh; must have registered a public key)
+ -strictHostKey      : request strict host key checking (for use with -ssh)
+ -logger FINE        : enable detailed logging from the client
+ -auth [ USER:SECRET | @FILE ] : specify username and either password or API token (or load from them both from a file);
+                                 for use with -http.
+                                 Passing credentials by file is recommended.
+                                 See https://www.jenkins.io/redirect/cli-http-connection-mode for more info and options.
+ -bearer [ TOKEN | @FILE ]     : specify authentication using a bearer token (or load the token from file);
+                                 for use with -http. Mutually exclusive with -auth.
+                                 Passing credentials by file is recommended.
+
+The available commands depend on the server. Run the 'help' command to see the list.
+Anonymous hostname as extra argument:
+
+ERROR: Too many arguments: @/etc/hostname
+java -jar jenkins-cli.jar help [COMMAND]
+Lists all the available commands or a detailed description of single command.
+ COMMAND : Name of the command (default: LAB32-CONTROL)

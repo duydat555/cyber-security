@@ -1,0 +1,13 @@
+Jenkins-2.441
+TEST: help LAB32-CONTROL @/var/jenkins_home/lab-marker.txt
+
+ERROR: Too many arguments: CICD-LAB32-HARMLESS-MARKER
+java -jar jenkins-cli.jar help [COMMAND]
+Lists all the available commands or a detailed description of single command.
+ COMMAND : Name of the command (default: LAB32-CONTROL)
+TEST: help LAB32-CONTROL @/etc/hostname
+
+ERROR: Too many arguments: lab32-controller
+java -jar jenkins-cli.jar help [COMMAND]
+Lists all the available commands or a detailed description of single command.
+ COMMAND : Name of the command (default: LAB32-CONTROL)

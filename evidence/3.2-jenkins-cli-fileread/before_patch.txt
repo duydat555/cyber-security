@@ -1,0 +1,15 @@
+Jenkins version:
+X-Jenkins: 2.441
+X-Jenkins-Session: e28c96ce
+Anonymous two-line marker test:
+
+ERROR: Too many arguments: SECOND-LINE-DEMO
+java -jar jenkins-cli.jar help [COMMAND]
+Lists all the available commands or a detailed description of single command.
+ COMMAND : Name of the command (default: CICD-LAB32-HARMLESS-MARKER)
+Anonymous hostname as extra argument:
+
+ERROR: Too many arguments: lab32-controller
+java -jar jenkins-cli.jar help [COMMAND]
+Lists all the available commands or a detailed description of single command.
+ COMMAND : Name of the command (default: LAB32-CONTROL)
